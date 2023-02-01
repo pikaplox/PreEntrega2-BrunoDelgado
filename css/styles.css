@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+/* ESTILOS GENERALES */
+
+body{
+    height: 100vh;
+    background-color: #131514;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS DE INDEX */
+
+/* MAIN */
+
+.titulo{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 8rem;
+    color: #f9f5f6;
+    animation-name: animation-h1-h2-h3;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+
+@keyframes animation-h1-h2-h3{
+    0%{
+        opacity: 0%;
+    }
+    15%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.subtitulo-1{
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    color: #f9f5f6;
+    text-align: center;
+    animation-name: animation-h2;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation-h2{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+.caja-index{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.index-main a{
+    text-decoration: none;
+}
+
+.index-main h3{
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 2px 3px black;
+}
+
+.div-uno{
+    grid-area: div-uno;
+    animation-name: animation-caja-uno;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/index-1.png);
+    transition: .5s;
+}
+
+.div-uno:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+@keyframes animation-caja-uno{
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.div-dos{
+    grid-area: div-dos;
+    animation-name: animation-caja-dos;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/index-2.png);
+    transition: .5s;
+}
+
+.div-dos:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+@keyframes animation-caja-dos{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.div-tres{
+    grid-area: div-tres;
+    animation-name: animation-caja-tres;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/index-3.png);
+    transition: .5s;
+}
+
+.div-tres:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+@keyframes animation-caja-tres{
+    0%{
+        opacity: 0%;
+    }
+    60%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.div-cuatro{
+    grid-area: div-cuatro;
+    animation-name: animation-caja-cuatro;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/index-4.png);
+    transition: .5s;
+    
+}
+
+.div-cuatro:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+@keyframes animation-caja-cuatro{
+    0%{
+        opacity: 0%;
+    }
+    70%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.grid-index{
+    display: grid;
+    grid-template-areas: "div-uno div-dos"
+                         "div-tres div-cuatro";
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos de footer */
+
+footer{
+    background-color: #ece7e7;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer h4{
+    color: #131514;
+    font-size: 1rem;
+    
+
+}
+
+@media screen and (max-width:1024px) {
+    
+
+    .grid-index{
+        display: grid;
+        grid-template-areas: "div-uno"
+                             "div-dos"
+                             "div-tres"
+                             "div-cuatro";
+    }
+
+    .index-main{
+        margin-bottom: 30px;
+    }
+
+
+}
+
+/* ===================== */
+/* Estilos de Classes */
+
+/* header */
+
+header{
+    animation-name: animation-header;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation-header{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+body header h4{
+    font-size: 3rem;
+    font-weight: 600;
+    
+    
+}
+
+body header h4 a{
+    text-decoration: none;
+    color: #131514;
+}
+body header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 3rem;
+    background-color: #f9f5f6;
+}
+
+body header div nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+
+li{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #131514;
+    transition: .3s;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: #131514;
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.display-block{
+    display: none;
+}
+
+
+/* main */
+
+.cajon{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.grid-classes{
+    display: grid;
+    grid-template-areas: "clase-1 clase-2"
+                         "clase-3 clase-4";
+    gap: 30px;
+    justify-content: center;
+}
+
+
+
+.subtitulo{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f9f5f6;
+    animation-name: animation-h1-h2-h3;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    margin: 3rem auto;
+    
+    
+}
+
+.clase-1{
+    animation-name: animation-caja-uno;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/warrior.png);
+}
+
+.clase-2{
+    animation-name: animation-caja-dos;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/ranger.png);
+}
+
+.clase-3{
+    animation-name: animation-caja-tres;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/witch.png);
+}
+
+
+.clase-4{
+    animation-name: animation-caja-cuatro;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/woosa.png);
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .grid-classes{
+        display: grid;
+        grid-template-areas: "clase-1"
+                             "clase-2"
+                             "clase-3"
+                             "clase-4";
+    }
+
+    .classes-main{
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+/* ESTILOS DE GUIDES */
+
+/* MAIN */
+
+.guides-main{
+    margin-bottom: 500px;
+}
+
+.caja-guides{
+    height: 250px;
+    width: 1000px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.grid-guides{
+    display: grid;
+    grid-template-areas: "container-1"
+                         "container-2"
+                         ;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+
+.container-uno{
+    grid-area: container-1;
+    animation-name: animation-container-uno;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    background-image: url(../img/GUIDES-1.png);
+}
+
+@keyframes animation-container-uno{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.container-dos{
+    grid-area: container-2;
+    animation-name: animation-container-dos;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    background-image: url(../img/GUIDES-2.png);  
+}
+
+@keyframes animation-container-dos{
+    0%{
+        opacity: 0%;
+    }
+    35%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* Sections */
+
+.guia-uno, .guia-dos{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 800px;
+    background-color: #f9f9f6;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.imagen-titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h3{
+    text-transform: uppercase;
+}
+
+.guides-padding{
+    padding: 8px;
+}
+
+.guides-imagen {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+section h4{
+    color: rgb(170, 68, 88);
+}
+
+section h5{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.patron{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    
+}
+
+@media screen and (max-width:1024px) {
+
+    .container-uno{
+        background-position-x: -350px;
+    }
+
+    .container-dos{
+        background-position-x: -350px;
+    }
+    
+    .caja-guides{
+        width: 300px;
+    }
+
+    .guia-uno{
+        width: 300px;
+        height: 1100px;
+        
+    }
+
+    .guia-dos{
+        width: 300px;
+        height: 1100px;
+    }
+
+    .guides-imagen{
+        gap: 20px;
+    }
+
+    section p{
+        font-size: .7rem;
+    }
+
+    section h4{
+        font-size: .8rem;
+    }
+
+    section h5{
+        font-size: .8rem;
+        text-align: center;
+    }
+}
+
+
+
+/* ESTILO DE BOSSES */
+
+/* MAIN */
+
+.grid-bosses{
+    display: grid;
+    grid-template-areas: "boss-1"
+                         "boss-2"
+                         "boss-3";
+    gap: 30px;
+    justify-content: center;
+}
+
+.caja-bosses{
+    width: 800px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.bosses-main h3{
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 2px 3px black;
+}
+
+.boss-uno, .boss-dos, .boss-tres{
+    transition: 1s;
+}
+
+.boss-uno:hover{
+    transition: 1s;
+    transform: scale(1.02);
+}
+
+.boss-dos:hover{
+    transition: 1s;
+    transform: scale(1.02);
+}
+
+.boss-tres:hover{
+    transition: 1s;
+    transform: scale(1.02);
+}
+
+.boss-uno{
+    animation-name: animation-boss-uno;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/garmoth.png);
+}
+
+@keyframes animation-boss-uno{
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.boss-dos{
+    animation-name: animation-boss-dos;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/vell.png);
+}
+
+@keyframes animation-boss-dos{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.boss-tres{
+    animation-name: animation-boss-tres;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-image: url(../img/nouver.png);
+}
+
+@keyframes animation-boss-tres{
+    0%{
+        opacity: 0%;
+    }
+    60%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .caja-bosses{
+        width: 300px;
+    }
+
+    .boss-uno{
+        background-position-x: -290px;
+    }
+
+    .boss-dos{
+        background-position-x: -350px;
+    }
+
+    .boss-tres{
+        background-position-x: -290px;
+    }
+}
