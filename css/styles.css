@@ -341,6 +341,12 @@ li:hover{
     animation-duration: 4s;
     animation-iteration-count: 1;
     background-image: url(../img/warrior.png);
+    transition: .5s;
+}
+
+.clase-1:hover{
+    transition: .5s;
+    transform: scale(1.02);
 }
 
 .clase-2{
@@ -348,6 +354,12 @@ li:hover{
     animation-duration: 4s;
     animation-iteration-count: 1;
     background-image: url(../img/ranger.png);
+    transition: .5s;
+}
+
+.clase-2:hover{
+    transition: .5s;
+    transform: scale(1.02);
 }
 
 .clase-3{
@@ -355,16 +367,32 @@ li:hover{
     animation-duration: 4s;
     animation-iteration-count: 1;
     background-image: url(../img/witch.png);
+    transition: .5s;
 }
 
+.clase-3:hover{
+    transition: .5s;
+    transform: scale(1.02);
+}
 
 .clase-4{
     animation-name: animation-caja-cuatro;
     animation-duration: 4s;
     animation-iteration-count: 1;
     background-image: url(../img/woosa.png);
+    transition: .5s;
 }
 
+.clase-4:hover{
+    transition: .5s;
+    transform: scale(1.02);
+}
+
+.classes-main h3{
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 3px 3px black;
+}
 
 
 @media screen and (max-width:1024px) {
@@ -417,6 +445,12 @@ li:hover{
     animation-duration: 5s;
     animation-iteration-count: 1;
     background-image: url(../img/GUIDES-1.png);
+    transition: .5s;
+}
+
+.container-uno:hover{
+    transition: .5s;
+    transform: scale(1.02);
 }
 
 @keyframes animation-container-uno{
@@ -437,6 +471,12 @@ li:hover{
     animation-duration: 5s;
     animation-iteration-count: 1;
     background-image: url(../img/GUIDES-2.png);  
+    transition: .5s;
+}
+
+.container-dos:hover{
+    transition: .5s;
+    transform: scale(1.02);
 }
 
 @keyframes animation-container-dos{
